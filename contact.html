@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — The Urban Spoon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo">The <span>Urban</span> Spoon</a></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reservation.html">Reserve</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact & Visit</h1>
+    <div class="grid contact-grid">
+      <div class="contact-details">
+        <h2>Get in touch</h2>
+        <p><strong>Address:</strong> 123 Brunch Street, City Center, 560001</p>
+        <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hello@urbanspoon.example">hello@urbanspoon.example</a></p>
+        <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 10:00 PM · Sat-Sun: 8:00 AM - 11:30 PM</p>
+        <a class="btn outline" href="https://wa.me/911234567890" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+
+      <div class="map-and-form">
+        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153..." style="border:0;" allowfullscreen loading="lazy"></iframe>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="cname">Name*</label>
+          <input id="cname" name="name" required>
+
+          <label for="cemail">Email*</label>
+          <input id="cemail" name="email" type="email" required>
+
+          <label for="cphone">Phone</label>
+          <input id="cphone" name="phone" type="tel">
+
+          <label for="ctype">Inquiry Type</label>
+          <select id="ctype" name="type">
+            <option>General Inquiry</option>
+            <option>Catering</option>
+            <option>Events</option>
+            <option>Feedback</option>
+          </select>
+
+          <label for="cmsg">Message*</label>
+          <textarea id="cmsg" name="message" rows="4" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+          </div>
+
+          <div id="contactSuccess" class="form-success" role="status" hidden>
+            Thanks — we received your message and will reply within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Contact</h4><p>123 Brunch Street</p></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

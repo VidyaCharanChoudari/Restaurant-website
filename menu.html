@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — The Urban Spoon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo">The <span>Urban</span> Spoon</a></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reservation.html">Reserve</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container menu-page">
+    <div class="menu-header">
+      <h1>Our Menu</h1>
+      <p>Fresh, seasonal dishes crafted for satisfying brunches and light lunches.</p>
+      <div class="menu-actions">
+        <button class="btn outline" id="printMenu">Print / Save as PDF</button>
+        <div class="filter">
+          <label for="dietFilter">Filter:</label>
+          <select id="dietFilter">
+            <option value="all">All</option>
+            <option value="veg">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gf">Gluten-free</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <nav class="menu-categories">
+      <a href="#breakfast">All-Day Breakfast</a>
+      <a href="#bowls">Bowls & Salads</a>
+      <a href="#sandwiches">Sandwiches</a>
+      <a href="#beverages">Coffee & Beverages</a>
+      <a href="#sweets">Sweet Treats</a>
+    </nav>
+
+    <section id="breakfast" class="menu-section">
+      <h2>All-Day Breakfast</h2>
+      <div class="menu-grid">
+        <article class="menu-item" data-diet="veg">
+          <h3>Avocado Toast <span class="price">₹320</span></h3>
+          <p>Smashed avocado on sourdough, cherry tomatoes, microgreens.</p>
+          <div class="tags">🌱 Vegetarian</div>
+        </article>
+        <article class="menu-item" data-diet="all">
+          <h3>Eggs Benedict <span class="price">₹380</span></h3>
+          <p>Poached eggs, hollandaise, toasted muffin.</p>
+          <div class="tags">⭐ Chef's Special</div>
+        </article>
+        <!-- add 6-8 items similarly -->
+      </div>
+    </section>
+
+    <section id="bowls" class="menu-section">
+      <h2>Bowls & Salads</h2>
+      <div class="menu-grid">
+        <article class="menu-item" data-diet="vegan">
+          <h3>Acai Power Bowl <span class="price">₹350</span></h3>
+          <p>Acai, granola, seasonal fruit, honey drizzle.</p>
+          <div class="tags">🌱 Vegan</div>
+        </article>
+        <!-- more items -->
+      </div>
+    </section>
+
+    <section id="sandwiches" class="menu-section">
+      <h2>Sandwiches & Burgers</h2>
+      <div class="menu-grid">
+        <article class="menu-item" data-diet="all">
+          <h3>Grilled Chicken Sandwich <span class="price">₹420</span></h3>
+          <p>Marinated chicken, lettuce, tomato, aioli on sourdough.</p>
+        </article>
+        <!-- more -->
+      </div>
+    </section>
+
+    <section id="beverages" class="menu-section">
+      <h2>Coffee & Beverages</h2>
+      <div class="menu-grid">
+        <article class="menu-item" data-diet="all">
+          <h3>Flat White <span class="price">₹160</span></h3>
+          <p>Single origin espresso, velvety microfoam.</p>
+        </article>
+        <!-- more -->
+      </div>
+    </section>
+
+    <section id="sweets" class="menu-section">
+      <h2>Sweet Treats</h2>
+      <div class="menu-grid">
+        <article class="menu-item" data-diet="veg">
+          <h3>Blueberry Muffin <span class="price">₹140</span></h3>
+          <p>Fresh blueberries, buttery crumb.</p>
+        </article>
+        <!-- more -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact</h4>
+        <p>123 Brunch Street, City Center</p>
+        <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year2"></span> The Urban Spoon</div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
