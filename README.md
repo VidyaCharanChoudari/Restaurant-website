@@ -22,7 +22,7 @@ It’s designed with modern UI principles, focusing on simplicity, accessibility
 - JavaScript 
 
 Colone this repository :
-git clone https://github.com/yourusername/Restaurant-Website.git
+git clone https://github.com/VidyaCharanChoudari/Restaurant-Website.git
 
 
 Author 
