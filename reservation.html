@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reserve — The Urban Spoon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo">The <span>Urban</span> Spoon</a></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reservation.html" class="active">Reserve</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container reservation-page">
+    <h1>Reserve Your Table</h1>
+    <p>Fill out the form below — we'll confirm instantly (simulated).</p>
+
+    <form id="reservationForm" class="reservation-form" novalidate>
+      <label for="rname">Full Name*</label>
+      <input id="rname" name="name" required>
+
+      <label for="remail">Email*</label>
+      <input id="remail" name="email" type="email" required>
+
+      <label for="rphone">Phone*</label>
+      <input id="rphone" name="phone" type="tel" required>
+
+      <label for="rdate">Date*</label>
+      <input id="rdate" name="date" type="date" required>
+
+      <label for="rtime">Time*</label>
+      <select id="rtime" name="time" required>
+        <!-- JS will populate times -->
+      </select>
+
+      <label for="rguests">Number of Guests*</label>
+      <select id="rguests" name="guests" required>
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>More than 10</option>
+      </select>
+
+      <label for="roccasion">Occasion</label>
+      <select id="roccasion" name="occasion">
+        <option>Casual Dining</option>
+        <option>Birthday</option>
+        <option>Anniversary</option>
+        <option>Business Meeting</option>
+      </select>
+
+      <label for="rnotes">Special Requests</label>
+      <textarea id="rnotes" name="notes" rows="3"></textarea>
+
+      <label class="terms">
+        <input type="checkbox" id="rterms" required> I agree to the reservation terms.
+      </label>
+
+      <button class="btn primary" type="submit">Reserve Now</button>
+    </form>
+
+    <div id="reservationSuccess" class="reservation-success" hidden>
+      <h3>Reservation Confirmed</h3>
+      <p id="resSummary"></p>
+      <p>Your booking reference: <strong id="resRef"></strong></p>
+      <button id="downloadIcs" class="btn outline">Add to Calendar</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>The Urban Spoon</h4><p>123 Brunch Street</p></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
